@@ -141,3 +141,177 @@ ul li a {
     color: #757575;
     font-size: 16px;
 }
+
+/* summary container */
+.summary{
+    width:80%;
+    max-width:1140px;
+    margin:80px auto;
+}
+
+/* Heading */
+
+.summary-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.summary-title{
+    font-size:36px;
+    font-weight:700;
+}
+
+/* Grid */
+
+.summary-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+}
+
+/* Subtitle */
+
+.summary-subtitle{
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+/* Card */
+
+.summary-card{
+    border-bottom:1px solid #ddd;
+    padding-bottom:30px;
+    margin-bottom:30px;
+}
+
+.summary-card-title{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.summary-card-info{
+    font-size:18px;
+    color:#666;
+    margin-bottom:15px;
+}
+
+.summary-card-text{
+    color:#757575;
+    line-height:1.8;
+}
+
+/* Button */
+
+.summary-btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+.summary-download-btn{
+    background:#FD6E0A;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.summary-download-btn:hover{
+    background:#d95f00;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .summary-content{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .summary-title{
+        font-size:30px;
+    }
+
+    .summary-subtitle{
+        font-size:26px;
+    }
+
+    .summary-card-title{
+        font-size:22px;
+    }
+
+}
+
+/* amazing work section */
+.my-amazing-parent{
+text-align: center;
+}
+.gallery{
+    margin: 20px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six" ;
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+    grid-area: six;
+}
+
+/* footar */
+footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFF8F3;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer form{
+    padding: 20px;
+}
+.footer-left p{
+    margin: 10px 0;
+}
+footer form input, footer form textarea{
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-icon-parent span{
+    color: #d95f00;
+    font-size: 25px;
+}
